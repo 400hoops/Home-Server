@@ -59,6 +59,7 @@ echo "Creating a new user..."
 read -p "Enter the username (default: john): " username
 username=${username:-john}
 adduser -u $username -G smb_group 
+addgroup $username docker
 echo "Creating a new Samba user..."
 read -sp "Enter the Samba password: " smb_password
 echo
@@ -79,6 +80,8 @@ chmod 770 /$pool_name/time_machine
 chgrp smb_group /$pool_name/time_machine
 echo "Starting the Samba service..."
 rc-service samba start
+echo "Starting the Docker service..."
+service docker start
 
 echo "Configuring automatic updates and maintenance..."
 crontab -l | { 
