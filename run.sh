@@ -6,7 +6,6 @@ apk add nano zfs samba docker docker-compose
 
 echo "Starting services on boot..."
 rc-update add zfs-import default
-rc-update add zfs
 rc-update add samba
 rc-update add docker default
 
