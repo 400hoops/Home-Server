@@ -82,6 +82,7 @@ echo "Starting the Samba service..."
 rc-service samba start
 echo "Starting the Docker service..."
 service docker start
+cd ..
 
 echo "Configuring automatic updates and maintenance..."
 crontab -l | { 
