@@ -87,6 +87,6 @@ cd ..
 echo "Configuring automatic updates and maintenance..."
 crontab -l | { 
   cat; 
-  echo "0 3 * * * apk update && apk upgrade"; 
-  echo "30 3 * * * docker compose pull && docker compose up -d && docker image prune -af"; 
+  echo "0       3       *       *       *       apk update && apk upgrade"; 
+  echo "30       3       *       *       *       docker compose pull && docker compose up -d && docker image prune -af"; 
 } | crontab -
