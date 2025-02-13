@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Enable Community APK Repository
+echo "Enabling Community APK Repository..."
+echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
+
 echo "Installing required services..."
 apk update
 apk add nano zfs samba docker docker-compose
