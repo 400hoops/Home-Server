@@ -58,7 +58,7 @@ addgroup smb_group
 echo "Creating a new user..."
 read -p "Enter the username (default: john): " username
 username=${username:-john}
-adduser -H -D -G smb_group -S $username
+adduser -u $username -G smb_group 
 echo "Creating a new Samba user..."
 read -sp "Enter the Samba password: " smb_password
 echo
