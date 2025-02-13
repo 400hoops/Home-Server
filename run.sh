@@ -2,7 +2,7 @@
 
 echo "Installing required services..."
 apk update
-apk add nano zfs smb docker docker-compose
+apk add nano zfs samba docker docker-compose
 
 echo "Starting services on boot..."
 rc-update add zfs-import default
