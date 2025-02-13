@@ -52,7 +52,7 @@ zpool create -f -o ashift=12 pool mirror sda sdb
 ### Creating Folders, Users, Groups, and Permissions
 
 1. **Create a new group**: Run `addgroup smb_group`.
-2. **Create a new user**: Run `adduser -S smb_group john`.
+2. **Create a new user**: Run `adduser -u john -G smb_group`.
 3. **Create a new Samba user**: Run `smbpasswd -a john`.
 4. **Create the /time_machine path on the pool**: Run `mkdir /pool/time_machine`.
 5. **Modify the `/pool/time_machine` r/w permissions**: Run `chmod 770 /pool/time_machine && chgrp smb_group /pool/time_machine`.
