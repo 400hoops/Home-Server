@@ -56,7 +56,7 @@ zpool create -f -o ashift=12 pool mirror sda sdb
 3. **Create a new Samba user**: Run `smbpasswd -a john`.
 4. **Create the /time_machine path on the pool**: Run `mkdir /pool/time_machine`.
 5. **Modify the `/pool/time_machine` r/w permissions**: Run `chmod 770 /pool/time_machine && chgrp smb_group /pool/time_machine`.
-6. **Start the Samba service**: Run `rc-service start samba`.
+6. **Start the Samba service**: Run `rc-service samba start`.
 
 ### Automatic Updates and Maintainance
 
