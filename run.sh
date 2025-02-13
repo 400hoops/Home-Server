@@ -10,7 +10,7 @@ rc-update add samba
 rc-update add docker default
 
 echo "Creating a ZFS pool..."
-lsblk
+fdisk -l
 read -p "Enter the pool name: " pool_name
 read -p "Enter the disk identifiers (e.g. sda sdb): " disk_identifiers
 zpool create -f -o ashift=12 $pool_name mirror $disk_identifiers
