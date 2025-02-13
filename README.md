@@ -4,9 +4,12 @@ This guide provides a quick overview for setting up a lightweight and minimal ho
 ### Hardware Requirements
 
 * A computer capable of running Alpine Linux (preferably x86 based)
+	+ A boot disk
+  	+ A set of 2 identical hard drives
+	+ A PCIE NIC (optional)
 * A RJ45 cable
-* An empty USB stick
-* A PCIE NIC (optional)
+* A empty USB stick
+
 
 ### Software Requirements
 
