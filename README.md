@@ -26,7 +26,7 @@ This guide provides a quick overview for setting up a lightweight and minimal ho
 
 To install the required services, run the following command:
 ```bash
-apk add nano zfs smb docker docker-compose
+apk add nano zfs samba docker docker-compose
 ```
 To start the services on boot, run:
 ```bash
