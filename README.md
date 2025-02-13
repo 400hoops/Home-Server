@@ -1,5 +1,5 @@
 # Home-Server
-This guide provides a step-by-step walkthrough for setting up a lightweight and minimal home server using Alpine Linux, Docker, OpenZFS, and SMB.
+This guide provides a quick overview for setting up a lightweight and minimal home server using Alpine Linux, Docker, OpenZFS, and SMB.
 
 ### Hardware Requirements
 
