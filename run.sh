@@ -11,7 +11,7 @@ rc-update add smb
 rc-update add docker default
 
 echo "Creating a ZFS pool..."
-echo "Please identify the available disks using lsblk or fdisk -l."
+lsblk
 read -p "Enter the pool name: " pool_name
 read -p "Enter the disk identifiers (e.g. sda sdb): " disk_identifiers
 zpool create -f -o ashift=12 $pool_name mirror $disk_identifiers
@@ -24,7 +24,6 @@ cat > /etc/samba/smb.conf <<EOF
         client ipc min protocol = SMB3
         client ipc signing = required
         client signing = required
-        interfaces = eth0
         map to guest = Bad User
         restrict anonymous = 2
         security = USER
@@ -40,8 +39,6 @@ cat > /etc/samba/smb.conf <<EOF
         fruit:posix_rename = yes
         idmap config * : backend = tdb
         browseable = no
-        hosts allow = [IP here]
-        hosts deny = 0.0.0.0/0
         vfs objects = fruit streams_xattr
 
 [Time Machine]
