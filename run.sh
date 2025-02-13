@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Enable Community APK Repository
+# Enable Community APK Repository (optional)
 echo "Enabling Community APK Repository..."
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
