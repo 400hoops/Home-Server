@@ -33,7 +33,7 @@ apk add nano zfs samba docker docker-cli-compose
 ```
 To start the services on boot, run:
 ```bash
-rc-update add zfs-import default && rc-update add zfs && rc-update add smb && rc-update add docker default
+rc-update add zfs-import default && rc-update add smb && rc-update add docker default
 ```
 
 ### Creating a ZFS Pool
