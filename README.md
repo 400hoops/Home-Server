@@ -15,6 +15,9 @@ This guide provides a quick overview for setting up a lightweight and minimal ho
 	+ Rufus
 	+ Etcher
 	+ Gnome Disks
+### Script ###
+
+```chmod +x run.sh``` & ```./run.sh```
 
 ### Initial Setup
 
