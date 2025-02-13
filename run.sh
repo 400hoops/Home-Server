@@ -78,7 +78,7 @@ echo "Modifying the /time_machine r/w permissions..."
 chmod 770 /$pool_name/time_machine
 chgrp smb_group /$pool_name/time_machine
 echo "Starting the Samba service..."
-rc-service start samba
+rc-service samba start
 
 echo "Configuring automatic updates and maintenance..."
 crontab -l | { 
